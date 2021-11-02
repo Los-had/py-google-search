@@ -24,7 +24,7 @@ def search(term: str) -> dict:
             results['results'].append(result)
         
         return results
-        
+
     except HTTPError as e:
         return http_error(e)
     except ConnectionError as e:
@@ -32,7 +32,7 @@ def search(term: str) -> dict:
     except Exception as e:
         return dynamic_error(e)
     except:
-        return default_error(e)
+        return default_error()
 
 def generate_url(search_term: str) -> str:
     used_search_term = search_term.replace(' ', '+')
