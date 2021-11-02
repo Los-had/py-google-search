@@ -20,5 +20,11 @@ execute o programa:
 $ python app.py
 ```
 
+### como ver o meu histórico?
+digite na caixa de pesquisa:
+```
+--history
+```
+
 ## Licença
 [MIT](LICENSE)
