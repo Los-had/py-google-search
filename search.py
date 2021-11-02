@@ -35,6 +35,9 @@ def search(term: str) -> dict:
         return default_error()
 
 def generate_url(search_term: str) -> str:
-    used_search_term = search_term.replace(' ', '+')
+    if " " in search_term:
+        used_search_term = search_term.replace(' ', '+')
 
-    return f'https://www.google.com/search?q={used_search_term}&ie=UTF-8&oe=UTF-8'
+        return f'https://www.google.com/search?q={used_search_term}&ie=UTF-8&oe=UTF-8'
+    
+    return f'https://www.google.com/search?q={search_term}&ie=UTF-8&oe=UTF-8'
