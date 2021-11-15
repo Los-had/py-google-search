@@ -20,6 +20,15 @@ def main():
                 print("========================================================================")
                 print(f'Title: {name}')
                 print(f'Link: {link}')
+        except KeyboardInterrupt:
+            ch = input("Deseja sair?(s/n)").lower()
+            if ch == 's':
+                exit()
+            elif ch == 'n':
+                continue
+            else:
+                print("Escolha inválida...")
+                continue
         except Exception as e:
             print(e)
             break
