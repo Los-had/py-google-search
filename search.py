@@ -29,8 +29,8 @@ def search(term: str) -> dict:
                 }
             else:
                 result = {
-                    'name': 'Unknown',
-                    'link': 'Error cannot find the link'
+                    'name': 'Desconhecido',
+                    'link': 'Não foi possível encontrar o link'
                 }
 
             results['results'].append(result)
