@@ -9,7 +9,7 @@ def search(term: str) -> dict:
         if " " in term:
             r_box = 'g'
         else:
-            r_box = ''
+            r_box = 'g'
 
         headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36 OPR/80.0.4170.61"}
         req = requests.get(generate_url(term), headers=headers).text
